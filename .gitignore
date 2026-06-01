@@ -1,0 +1,8 @@
+github_data/
+output/
+logs/
+hive/
+
+*.json.gz
+__pycache__/
+*.pyc
