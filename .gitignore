@@ -6,3 +6,6 @@ hive/
 *.json.gz
 __pycache__/
 *.pyc
+
+.venv/
+venv/

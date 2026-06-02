@@ -1,12 +1,14 @@
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../../results/technology_count.csv", header=None, names=["technology", "cnt"])
+df = pd.read_csv("../../results/technology_count.csv")
 
-top10 = df.sort_values("cnt", ascending=False).head(10)
+top10 = df.sort_values("count", ascending=False).head(10)
 
 plt.figure(figsize=(10,5))
-plt.bar(top10["technology"], top10["cnt"])
+plt.bar(top10["technology"], top10["count"])
 plt.title("Technology Activity Top 10")
 plt.xticks(rotation=45)
 plt.tight_layout()
