@@ -160,5 +160,5 @@ analyze 디렉터리 안의 Python 스크립트들을 실행하여 기술별 활
 
 
 ### AI Tool Usage
-- Tool used: ChatGPT (OpenAI)
+- Tool used: ChatGPT (OpenAI) <br>
 디버깅, 문장 표현 수정 및 시각화 구성 검토
