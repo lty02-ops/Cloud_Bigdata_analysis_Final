@@ -35,7 +35,6 @@ make_combo_udf = udf(make_combo, ArrayType(StringType()))
 count_size_udf = udf(count_size, IntegerType())
 
 repo_df = df.withColumn("techs", find_keywords_udf(col("repo_lower")))
-
 activity_df = repo_df.withColumn("technology", explode(col("techs")))
 activity_count = activity_df.groupBy("technology").count().orderBy(col("count").desc())
 
@@ -58,5 +57,4 @@ combination_count.filter(col("combo_size") >= 4).orderBy(col("count").desc()).sh
 
 activity_count.coalesce(1).write.mode("overwrite").csv("file:///home/maria_dev/Cloud_Bigdata_Analysis/output/technology_count")
 combination_count.coalesce(1).write.mode("overwrite").csv("file:///home/maria_dev/Cloud_Bigdata_Analysis/output/combination_count")
-
 spark.stop()
