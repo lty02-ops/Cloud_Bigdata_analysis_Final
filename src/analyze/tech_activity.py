@@ -12,6 +12,5 @@ plt.bar(top10["technology"], top10["count"])
 plt.title("Technology Activity Top 10")
 plt.xticks(rotation=45)
 plt.tight_layout()
-
 plt.savefig("../../results/technology_activity_top10.png")
 plt.show()
