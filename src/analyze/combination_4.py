@@ -12,6 +12,5 @@ plt.bar(top5["combination"], top5["count"])
 plt.title("combination >=_4")
 plt.xticks(rotation=45)
 plt.tight_layout()
-
 plt.savefig("../../results/combo_size4plus_top5.png")
 plt.show()
