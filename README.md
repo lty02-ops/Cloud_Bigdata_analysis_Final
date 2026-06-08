@@ -3,6 +3,7 @@
 ## 프로젝트 개요
 GitHub Archive 공개 이벤트 데이터를 활용하여 클라우드 기술의 활동량과 기술조합을 분석한 프로젝트이다.
 Apache Spark를 이용하여 대용량 데이터를 처리하였고 Apache Hive를 이용하여 SQL 기반 분석을 하였다.
+<br>
 
 ### 분석 기술 대상 <br>
 Cloud Provider – AWS, Azure, GCP <br>
